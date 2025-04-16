@@ -1,17 +1,18 @@
-// app/page.tsx
 'use client';
 
 import { BookingProvider } from '@/ context/BookingContext';
+import BookingCalendar from '@/components/BookingCalendar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero'; // Tu componente Hero existente
 import Navbar from '@/components/Navbar';
 import PackageSelector from '@/components/PackageSelector';
+import PaymentForm from '@/components/PaymentForm';
 import ServiceList from '@/components/ServicesList';
 
 export default function Home() {
   return (
     <BookingProvider>
-      <div className='flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]'>
+      <div className='flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)] hero-image'>
         <Navbar />
         {/* Contenido principal */}
         <main className='flex-grow'>
@@ -20,8 +21,8 @@ export default function Home() {
           </div>
           <PackageSelector />
           <ServiceList />
-          {/* <BookingCalendar />
-          <PaymentForm /> */}
+          <BookingCalendar />
+          <PaymentForm />
         </main>
 
         {/* Footer explícitamente al final */}
