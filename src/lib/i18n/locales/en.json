@@ -1,0 +1,49 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "packages": "Packages",
+      "services": "Services",
+      "book": "Book Now",
+      "contact": "Contact",
+      "about": "About Us",
+      "menu": "Menu",
+      "selectLanguage": "Languages",
+      "needHelp": "Need Help"
+    },
+    "footer": {
+      "rights": "All rights reserved",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "RelaxInn Vacation Homes",
+      "subtitle": "Experience the ultimate luxury getaway in Punta Cana with our exclusive vacation homes and premium services",
+      "exploreButton": "Explore Packages",
+      "learnMoreButton": "Learn More"
+    },
+    "packages": {
+      "title": "Choose Your Experience",
+      "subtitle": "Select the package that fits your vacation needs. Each option offers unique services to enhance your stay."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to answer your questions and help you plan your perfect stay in Punta Cana.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submitButton": "Send Message",
+      "success": "Message Sent!",
+      "successText": "Thank you for contacting us. Our team will get back to you as soon as possible."
+    }
+  },
+  "about": {
+    "title": "About RelaxInn",
+    "subtitle": "Discover the story behind our exclusive vacation homes and our commitment to luxury experiences in Punta Cana."
+  }
+}
