@@ -19,7 +19,7 @@
   },
   "home": {
     "hero": {
-      "title": "RelaxInn Vacation Homes",
+      "title": "Punta Cana Plan",
       "subtitle": "Experience the ultimate luxury getaway in Punta Cana with our exclusive vacation homes and premium services",
       "exploreButton": "Explore Packages",
       "learnMoreButton": "Learn More"
@@ -28,6 +28,149 @@
       "title": "Choose Your Experience",
       "subtitle": "Select the package that fits your vacation needs. Each option offers unique services to enhance your stay."
     }
+  },
+  "services": {
+    "title": {
+      "standard": "Punta Cana Plan Services",
+      "premium": "Punta Cana Luxe Services"
+    },
+    "subtitle": "Select the services you would like to include in your booking.",
+    "actions": {
+      "search": "Search services...",
+      "details": "View Details",
+      "addToBooking": "Add to Booking",
+      "selected": "Selected",
+      "selectDates": "Select Dates",
+      "removeFromBooking": "Remove from Booking",
+      "backToServices": "Back to Services",
+      "backToHome": "Back to Home",
+      "relatedServices": "Related Services"
+    },
+    "standard": {
+      "yoga": {
+        "name": "Yoga",
+        "short": "PCP yoga sessions at our beachfront pavilion",
+        "full": "Immerse yourself in the harmony of nature and awaken your inner balance in Punta Cana. Our classes — suitable for all levels — are led by certified instructors in dreamlike settings: beaches, tropical gardens, or scenic terraces. Inhale peace, exhale stress, and renew your energy. Book your yoga experience today and embrace wellness in paradise."
+      },
+      "bikeRentals": {
+        "name": "Bike Rentals",
+        "short": "Explore the resort on our comfortable bicycles",
+        "full": "Explore Punta Cana on two wheels with our bike rentals. Perfect for cruising along the beach, through natural surroundings, or around the city in a comfortable and eco-friendly way. Pedal, discover, and experience every corner. Book your bike today and start your adventure!"
+      },
+      "airportTransfers": {
+        "name": "Airport Transfers",
+        "short": "Convenient transportation to and from Punta Cana Airport",
+        "full": "Enjoy a comfortable and safe transfer to and from the airport with our private transportation service. We take you directly to your destination, so you can start your Punta Cana experience worry-free. Book your transfer today and travel with peace of mind."
+      },
+      "catamaranTrips": {
+        "name": "Catamaran Trips",
+        "short": "Scenic sailing adventures along the coastline",
+        "full": "Experience a unique adventure on the sea with our catamaran trips. Enjoy stunning landscapes, crystal-clear waters, and the tranquility of sailing along the coast of Punta Cana. Book your trip today and sail to paradise."
+      },
+      "golfCartRentals": {
+        "name": "Golf Cart Rentals",
+        "short": "Convenient transportation within the resort",
+        "full": "Enjoy the freedom to explore Punta Cana at your own pace with our golf cart rentals. Perfect for getting around resorts, beaches, and local trails in comfort. Drive, explore, and enjoy at your own pace. Book your cart today and discover Punta Cana."
+      },
+      "personalTraining": {
+        "name": "Personal Training",
+        "short": "One-on-one fitness sessions with certified trainers",
+        "full": "Stay in shape during your vacation with our personal training sessions. Work out with certified professionals who tailor each session to your level, goals, and schedule. Book today and become your best self in Punta Cana."
+      },
+      "babysitter": {
+        "name": "Babysitter",
+        "short": "Professional childcare services",
+        "full": "Trust your little ones with our qualified childcare professionals. Our babysitters are carefully selected for their experience and warmth, ensuring your children's safety and enjoyment in the comfort of your resort, villa, or apartment. Relax, enjoy, and make memories while we take care of them. Book your babysitting service today and experience Punta Cana your way."
+      },
+      "horsebackRiding": {
+        "name": "Horseback Riding",
+        "short": "Guided tours on horseback through scenic trails",
+        "full": "Discover the natural beauty of Punta Cana on horseback. Enjoy a guided ride along beaches, trails, and breathtaking landscapes—perfect for all experience levels. Book your horseback adventure and live an unforgettable experience."
+      },
+      "deepSeaFishing": {
+        "name": "Deep-Sea Fishing",
+        "short": "Exciting fishing excursions in the Caribbean Sea",
+        "full": "Embark on an exciting deep-sea fishing adventure with our expert captains. Explore deep waters, battle exotic species, and feel the thrill only the Caribbean Sea can offer. Set sail, fish, and create unforgettable memories. Book your deep-sea fishing trip today and feel the excitement of the catch."
+      },
+      "privateChef": {
+        "name": "Private Chef Service",
+        "short": "Personalized culinary experiences in your accommodation",
+        "full": "Delight your palate with personalized gourmet creations by a private chef in your villa, apartment, or yacht. Our team crafts custom menus using fresh ingredients and local flavors, turning every meal into an unforgettable experience. Book your private chef today and enjoy a unique culinary experience in Punta Cana."
+      },
+      "customDecorations": {
+        "name": "Custom Decorations",
+        "short": "Special event decorations for celebrations",
+        "full": "Enhance your events with custom decorations that reflect your style and theme. From floral arrangements to full setups, our team creates unique and memorable spaces. Surprise, delight, and celebrate in style. Book your personalized décor today and turn every detail into an extraordinary occasion."
+      },
+      "adventureExcursions": {
+        "name": "Adventure Excursions",
+        "short": "Thrilling activities and tours around Punta Cana",
+        "full": "Experience the thrill of adventure with our excursions. Unique experiences surrounded by the lush nature of Punta Cana. Dare, explore, and push your limits. Book your adventure excursion today and challenge your limits."
+      },
+      "karaoke": {
+        "name": "Private Karaoke Sessions",
+        "short": "Fun karaoke setup in your accommodation",
+        "full": "Enjoy a night full of music and fun with our karaoke service. Sing your favorite songs and create unforgettable memories with friends and family in a lively atmosphere. Sing, laugh, and turn every moment into a party! Book your karaoke session today and enjoy maximum fun."
+      },
+      "liveMusic": {
+        "name": "Live Music Entertainment",
+        "short": "Local musicians performing at your event",
+        "full": "Add a special touch to your celebration with live music entertainment. From Caribbean rhythms to international classics, our talented musicians will set the perfect mood for your event. Book today and let the music turn your night into an unforgettable experience."
+      },
+      "groceryShopping": {
+        "name": "Grocery Shopping Assistance",
+        "short": "We shop for groceries and deliver to your accommodation",
+        "full": "Forget the lines and wasted time. With our grocery shopping service, we stock your kitchen with everything you need before or during your stay. Fresh, local, and imported products delivered straight to your accommodation. Place your order today and enjoy more of your vacation."
+      }
+    },
+    "premium": {
+      "luxeYacht": {
+        "name": "Luxe Yacht",
+        "short": "Private luxury yacht charter with crew",
+        "full": "Experience ultimate luxury with our private yacht charter. Cruise the pristine Caribbean waters with a professional crew catering to your every need. Indulge in gourmet meals, premium beverages, and exclusive water activities."
+      },
+      "luxeEBikes": {
+        "name": "Luxe E-Bikes",
+        "short": "Premium electric bikes for effortless exploration",
+        "full": "Discover Punta Cana in style with our premium electric bikes. Enjoy effortless exploration of beaches, trails, and local attractions with top-of-the-line e-bikes featuring extended battery life and comfortable ergonomics."
+      },
+      "luxeGolfCart": {
+        "name": "Luxe Golf Cart",
+        "short": "Premium golf cart with extended features",
+        "full": "Travel in style with our luxury golf carts featuring premium leather seats, extended battery range, and upgraded features. Perfect for exploring resorts and local areas with elegance and comfort."
+      },
+      "luxeYoga": {
+        "name": "Luxe Yoga Sessions",
+        "short": "Private beachfront yoga with premium amenities",
+        "full": "Elevate your wellness journey with our exclusive private yoga sessions held in breathtaking locations. Experience personalized instruction, premium mats and equipment, and post-session organic refreshments."
+      },
+      "luxeFitness": {
+        "name": "Luxe Fitness Sessions",
+        "short": "Elite personal training with specialized equipment",
+        "full": "Transform your fitness routine with our elite training sessions. Work with top-tier personal trainers using premium equipment and cutting-edge techniques tailored specifically to your goals and fitness level."
+      },
+      "luxeCulinary": {
+        "name": "Luxe Culinary Service",
+        "short": "Gourmet chef experience with premium ingredients",
+        "full": "Indulge in the ultimate dining experience with our gourmet chef service. Enjoy exquisite multi-course meals prepared with the finest local and imported ingredients, paired with premium wines and served in the comfort of your accommodation."
+      },
+      "luxeMasseuse": {
+        "name": "Luxe Masseuse Service",
+        "short": "Premium spa treatments in your accommodation",
+        "full": "Unwind with our luxury spa experience brought directly to your accommodation. Our elite massage therapists provide premium treatments using organic oils and top-tier techniques, complete with aromatherapy and ambient music."
+      },
+      "luxeArrival": {
+        "name": "Luxe Arrival - SUV Service",
+        "short": "Luxury SUV airport transfer with premium amenities",
+        "full": "Begin your luxury experience from the moment you land with our premium SUV airport transfer. Enjoy plush leather seating, climate control, complimentary refreshments, and a professional chauffeur ready to ensure a seamless arrival to your destination."
+      }
+    },
+    "hours": {
+      "one": "hour",
+      "multiple": "hours",
+      "duration": "Duration"
+    },
+    "price": "Price"
   },
   "contact": {
     "title": "Contact Us",
@@ -43,7 +186,7 @@
     }
   },
   "about": {
-    "title": "About RelaxInn",
+    "title": "About PCP",
     "subtitle": "Discover the story behind our exclusive vacation homes and our commitment to luxury experiences in Punta Cana."
   }
 }

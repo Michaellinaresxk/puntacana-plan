@@ -26,12 +26,11 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className='text-5xl md:text-7xl font-bold text-white mb-6'>
-            RelaxInn <span className='text-amber-400'>Vacation Homes</span>
+            Punta Cana <span className='text-amber-400'>Plan</span>
           </h1>
 
           <p className='text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto'>
-            Experience the ultimate luxury getaway in Punta Cana with our
-            exclusive vacation homes and premium services
+            Elevate Your Stay with Premium Experiences
           </p>
 
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
@@ -41,7 +40,7 @@ const Hero = () => {
               </button>
             </Link>
 
-            <Link href='#contact'>
+            <Link href='/contact'>
               <button className='px-8 py-4 bg-transparent hover:bg-white/10 text-white border-2 border-white font-semibold rounded-lg transition-colors duration-300 text-lg'>
                 Contact Us
               </button>

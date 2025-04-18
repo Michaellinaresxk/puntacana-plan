@@ -20,6 +20,13 @@ const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  // Para evitar errores de hidratación, cargaremos las traducciones solo en el lado del cliente
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   // Cerrar el dropdown al hacer clic fuera
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -111,7 +118,8 @@ const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
             onClick={() => setIsOpen(!isOpen)}
             className={`flex items-center space-x-1 transition-colors px-2 py-1 rounded-lg focus:outline-none ${className}`}
             aria-expanded={isOpen}
-            aria-label={t('common.nav.selectLanguage')}
+            // Usar un valor estático para aria-label para evitar problemas de hidratación
+            aria-label='Select Language'
           >
             <Globe size={18} />
             <span className='text-sm font-medium uppercase'>{language}</span>
@@ -133,47 +141,49 @@ const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
             </svg>
           </button>
 
-          {/* Dropdown del selector de idioma */}
-          <AnimatePresence>
-            {isOpen && (
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.2 }}
-                className='absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50'
-              >
-                <div className='py-1' role='menu' aria-orientation='vertical'>
-                  <button
-                    onClick={() => handleLanguageChange('en')}
-                    className={`w-full text-left px-4 py-2 text-sm ${
-                      language === 'en'
-                        ? 'bg-gray-100 text-amber-500 font-medium'
-                        : 'text-gray-700 hover:bg-gray-100'
-                    }`}
-                    role='menuitem'
-                  >
-                    <div className='flex items-center'>
-                      <span className='mr-2'>🇺🇸</span> English
-                    </div>
-                  </button>
-                  <button
-                    onClick={() => handleLanguageChange('es')}
-                    className={`w-full text-left px-4 py-2 text-sm ${
-                      language === 'es'
-                        ? 'bg-gray-100 text-amber-500 font-medium'
-                        : 'text-gray-700 hover:bg-gray-100'
-                    }`}
-                    role='menuitem'
-                  >
-                    <div className='flex items-center'>
-                      <span className='mr-2'>🇪🇸</span> Español
-                    </div>
-                  </button>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          {/* Dropdown del selector de idioma - solo lo renderizamos en el cliente */}
+          {isClient && (
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className='absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50'
+                >
+                  <div className='py-1' role='menu' aria-orientation='vertical'>
+                    <button
+                      onClick={() => handleLanguageChange('en')}
+                      className={`w-full text-left px-4 py-2 text-sm ${
+                        language === 'en'
+                          ? 'bg-gray-100 text-amber-500 font-medium'
+                          : 'text-gray-700 hover:bg-gray-100'
+                      }`}
+                      role='menuitem'
+                    >
+                      <div className='flex items-center'>
+                        <span className='mr-2'>🇺🇸</span> English
+                      </div>
+                    </button>
+                    <button
+                      onClick={() => handleLanguageChange('es')}
+                      className={`w-full text-left px-4 py-2 text-sm ${
+                        language === 'es'
+                          ? 'bg-gray-100 text-amber-500 font-medium'
+                          : 'text-gray-700 hover:bg-gray-100'
+                      }`}
+                      role='menuitem'
+                    >
+                      <div className='flex items-center'>
+                        <span className='mr-2'>🇪🇸</span> Español
+                      </div>
+                    </button>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          )}
         </>
       )}
     </div>

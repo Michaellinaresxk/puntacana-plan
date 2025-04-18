@@ -1,4 +1,3 @@
-// lib/constants.ts
 import { PaymentMethod, PropertyDetails, Service } from '@/types/type';
 
 export const PROPERTY_DETAILS: PropertyDetails = {
@@ -16,15 +15,18 @@ export const SERVICES: Service[] = [
   {
     id: 'yoga-standard',
     name: 'Yoga',
-    description: 'Relaxing yoga sessions at our beachfront pavilion',
+    img: 'https://feldenkrais.com/wp-content/uploads/2023/04/david-whipple-PktK6GuC3U4-unsplash-scaled-e1680858426287.jpg',
+    description: 'PCP yoga sessions at our beachfront pavilion',
     packageType: ['standard'],
     price: 50,
     duration: 1,
     available: true,
   },
+
   {
     id: 'bike-rentals',
     name: 'Bike Rentals',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Explore the resort on our comfortable bicycles',
     packageType: ['standard'],
     price: 25,
@@ -34,6 +36,7 @@ export const SERVICES: Service[] = [
   {
     id: 'airport-transfers',
     name: 'Airport Transfers',
+    img: 'https://denomades.imgix.net/destinos/santiago/8/vehiculo-transporte-pasajeros.jpg?w=907&h=494&fit=crop&q=100&auto=format,compress&fm=webp',
     description: 'Convenient transportation to and from Punta Cana Airport',
     packageType: ['standard'],
     price: 75,
@@ -43,6 +46,7 @@ export const SERVICES: Service[] = [
   {
     id: 'catamaran-trips',
     name: 'Catamaran Trips',
+    img: 'https://www.velmundi.com/uploads/RTEmagicC_lagoon_440_01.jpg.jpg',
     description: 'Scenic sailing adventures along the coastline',
     packageType: ['standard'],
     price: 120,
@@ -52,6 +56,7 @@ export const SERVICES: Service[] = [
   {
     id: 'golf-cart-rentals',
     name: 'Golf Cart Rentals',
+    img: 'https://carrosgolf.com.mx/wp-content/uploads/2022/09/Porta-bolsas-de-Golf.jpg',
     description: 'Convenient transportation within the resort',
     packageType: ['standard'],
     price: 65,
@@ -61,6 +66,7 @@ export const SERVICES: Service[] = [
   {
     id: 'personal-training',
     name: 'Personal Training',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'One-on-one fitness sessions with certified trainers',
     packageType: ['standard'],
     price: 70,
@@ -70,6 +76,7 @@ export const SERVICES: Service[] = [
   {
     id: 'babysitter',
     name: 'Babysitter',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Professional childcare services',
     packageType: ['standard'],
     price: 20,
@@ -79,6 +86,7 @@ export const SERVICES: Service[] = [
   {
     id: 'horseback-riding',
     name: 'Horseback Riding',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Guided tours on horseback through scenic trails',
     packageType: ['standard'],
     price: 90,
@@ -88,6 +96,7 @@ export const SERVICES: Service[] = [
   {
     id: 'deep-sea-fishing',
     name: 'Deep-Sea Fishing',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Exciting fishing excursions in the Caribbean Sea',
     packageType: ['standard'],
     price: 250,
@@ -97,6 +106,7 @@ export const SERVICES: Service[] = [
   {
     id: 'private-chef',
     name: 'Private Chef Service',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Personalized culinary experiences in your accommodation',
     packageType: ['standard'],
     price: 200,
@@ -106,6 +116,7 @@ export const SERVICES: Service[] = [
   {
     id: 'custom-decorations',
     name: 'Custom Decorations',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Special event decorations for celebrations',
     packageType: ['standard'],
     price: 150,
@@ -115,6 +126,7 @@ export const SERVICES: Service[] = [
   {
     id: 'adventure-excursions',
     name: 'Adventure Excursions',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Thrilling activities and tours around Punta Cana',
     packageType: ['standard'],
     price: 110,
@@ -124,6 +136,7 @@ export const SERVICES: Service[] = [
   {
     id: 'karaoke',
     name: 'Private Karaoke Sessions',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Fun karaoke setup in your accommodation',
     packageType: ['standard'],
     price: 120,
@@ -133,6 +146,7 @@ export const SERVICES: Service[] = [
   {
     id: 'live-music',
     name: 'Live Music Entertainment',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Local musicians performing at your event',
     packageType: ['standard'],
     price: 300,
@@ -142,6 +156,7 @@ export const SERVICES: Service[] = [
   {
     id: 'grocery-shopping',
     name: 'Grocery Shopping Assistance',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'We shop for groceries and deliver to your accommodation',
     packageType: ['standard'],
     price: 50,
@@ -153,6 +168,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-yacht',
     name: 'Luxe Yacht',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Private luxury yacht charter with crew',
     packageType: ['premium'],
     price: 1500,
@@ -162,6 +178,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-e-bikes',
     name: 'Luxe E-Bikes',
+    img: 'https://bikepacking.com/wp-content/uploads/2023/09/Readers-Rig-Emilys-All-City-Super-Professional_13.jpg',
     description: 'Premium electric bikes for effortless exploration',
     packageType: ['premium'],
     price: 75,
@@ -171,6 +188,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-golf-cart',
     name: 'Luxe Golf Cart',
+    img: 'https://assets-us-01.kc-usercontent.com/b3c539fb-5388-0052-9b2c-d05615ca0363/592b138a-77a6-4203-8069-b8473ff20de9/onward-golf-carts-2-passenger-lifted-4-passenger-and-lifted-6-passenger-1280x720%20%281%29.jpg',
     description: 'Premium golf cart with extended features',
     packageType: ['premium'],
     price: 120,
@@ -180,6 +198,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-yoga',
     name: 'Luxe Yoga Sessions',
+    img: 'https://www.guardian.in/cdn/shop/articles/yoga-asans-for-weight-loss.jpg?v=1705486602&width=1000',
     description: 'Private beachfront yoga with premium amenities',
     packageType: ['premium'],
     price: 120,
@@ -189,6 +208,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-fitness',
     name: 'Luxe Fitness Sessions',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Elite personal training with specialized equipment',
     packageType: ['premium'],
     price: 150,
@@ -198,6 +218,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-culinary',
     name: 'Luxe Culinary Service',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Gourmet chef experience with premium ingredients',
     packageType: ['premium'],
     price: 500,
@@ -207,6 +228,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-masseuse',
     name: 'Luxe Masseuse Service',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Premium spa treatments in your accommodation',
     packageType: ['premium'],
     price: 200,
@@ -216,6 +238,7 @@ export const SERVICES: Service[] = [
   {
     id: 'luxe-arrival',
     name: 'Luxe Arrival - SUV Service',
+    img: 'https://imfixies.pt/2416-medium_default/blb-beetle-8-speed-700c-classic-city-bike.jpg',
     description: 'Luxury SUV airport transfer with premium amenities',
     packageType: ['premium'],
     price: 150,
