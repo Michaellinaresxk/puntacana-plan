@@ -27,7 +27,7 @@ const AboutPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                Sobre RelaxInn
+                Sobre PCP
               </motion.h1>
               <motion.p
                 className='text-lg text-white/80 mb-8'
@@ -79,10 +79,10 @@ const AboutPage = () => {
 
                 <div className='space-y-4 text-gray-700'>
                   <p>
-                    RelaxInn Vacation Homes nació en 2010 con una visión clara:
-                    ofrecer experiencias vacacionales de lujo que combinen la
-                    privacidad de un hogar con los servicios de un resort de
-                    cinco estrellas.
+                    Punta Cana plan nació en 2010 con una visión clara: ofrecer
+                    experiencias vacacionales de lujo que combinen la privacidad
+                    de un hogar con los servicios de un resort de cinco
+                    estrellas.
                   </p>
                   <p>
                     Fundada por un grupo de entusiastas del turismo dominicano,
@@ -496,10 +496,9 @@ const AboutPage = () => {
                   ))}
                 </div>
                 <p className='text-gray-700 italic'>
-                  "Hemos reservado con RelaxInn tres veces y cada experiencia ha
-                  sido mejor que la anterior. Las casas son impecables, pero lo
-                  que realmente marca la diferencia es el servicio
-                  personalizado."
+                  Hemos reservado con PCP tres veces y cada experiencia ha sido
+                  mejor que la anterior. Las casas son impecables, pero lo que
+                  realmente marca la diferencia es el servicio personalizado.
                 </p>
               </motion.div>
 
@@ -540,10 +539,10 @@ const AboutPage = () => {
                   ))}
                 </div>
                 <p className='text-gray-700 italic'>
-                  "Viajamos con niños y RelaxInn hizo que nuestras vacaciones
-                  fueran perfectas. La casa era espaciosa y los servicios para
-                  niños excelentes. El chef privado fue un lujo que disfrutamos
-                  enormemente."
+                  Viajamos con niños y PCP hizo que nuestras vacaciones fueran
+                  perfectas. La casa era espaciosa y los servicios para niños
+                  excelentes. El chef privado fue un lujo que disfrutamos
+                  enormemente.
                 </p>
               </motion.div>
             </div>

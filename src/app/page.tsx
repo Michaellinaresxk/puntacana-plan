@@ -7,7 +7,7 @@ import Hero from '@/components/Hero'; // Tu componente Hero existente
 import Navbar from '@/components/Navbar';
 import PackageSelector from '@/components/PackageSelector';
 import PaymentForm from '@/components/PaymentForm';
-import ServiceList from '@/components/ServicesList';
+import ServiceList from '@/components/ServiceList';
 
 export default function Home() {
   return (

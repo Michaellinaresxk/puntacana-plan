@@ -148,9 +148,9 @@ const ContactPage = () => {
                     <div className='ml-4'>
                       <h3 className='font-medium text-gray-900'>Email</h3>
                       <p className='text-gray-600 mt-1'>
-                        info@relaxinn.com
+                        info@puntacanaplan.com
                         <br />
-                        reservations@relaxinn.com
+                        booking@puntacanaplan.com
                       </p>
                     </div>
                   </div>
@@ -390,7 +390,7 @@ const ContactPage = () => {
                 <div className='h-full w-full flex items-center justify-center bg-gray-800/20'>
                   <div className='bg-white p-4 rounded-lg shadow-md'>
                     <h3 className='font-medium text-gray-900'>
-                      RelaxInn Vacation Homes
+                      Punta Cana Plan
                     </h3>
                     <p className='text-gray-600 text-sm'>
                       Puntacana Resort & Club, Punta Cana

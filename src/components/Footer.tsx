@@ -18,7 +18,7 @@ const Footer = () => {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           {/* Company Info */}
           <div className='md:col-span-1'>
-            <h3 className='text-xl font-bold mb-4'>RelaxInn</h3>
+            <h3 className='text-xl font-bold mb-4'>Punta Cana Plan</h3>
             <p className='text-gray-400 mb-6'>
               Experience luxury vacations in the beautiful Punta Cana, Dominican
               Republic.
@@ -109,7 +109,7 @@ const Footer = () => {
               </li>
               <li className='flex items-center'>
                 <Mail className='h-5 w-5 mr-3 text-gray-400' />
-                <span className='text-gray-400'>info@relaxinn.com</span>
+                <span className='text-gray-400'>info@puntacanaplan.com</span>
               </li>
             </ul>
           </div>
@@ -140,24 +140,24 @@ const Footer = () => {
 
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <p className='text-gray-500 text-sm mb-4 md:mb-0'>
-            &copy; {new Date().getFullYear()} RelaxInn Vacation Homes. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} Punta Cana Plan. All rights
+            reserved.
           </p>
           <div className='flex space-x-6'>
             <Link
-              href='#'
+              href='/privacy-policy'
               className='text-gray-500 hover:text-white text-sm transition-colors'
             >
               Privacy Policy
             </Link>
             <Link
-              href='#'
+              href='/terms-of-services'
               className='text-gray-500 hover:text-white text-sm transition-colors'
             >
               Terms of Service
             </Link>
             <Link
-              href='#'
+              href='/cookie-policy'
               className='text-gray-500 hover:text-white text-sm transition-colors'
             >
               Cookie Policy

@@ -6,11 +6,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu } from 'lucide-react';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import { useTranslation } from '@/lib/i18n/client';
+import {
+  hamburgerVariants,
+  menuItemVariants,
+  menuVariants,
+} from '@/constants/menuVariants';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
+
+  const menuItems = [
+    { text: t('common.nav.home'), href: '/' },
+    { text: t('common.nav.packages'), href: '/#packages' },
+    { text: t('common.nav.services'), href: '/#services' },
+    { text: t('common.nav.book'), href: '/#calendar' },
+    { text: t('common.nav.contact'), href: '/contact' },
+    { text: t('common.nav.about'), href: '/about' },
+  ];
 
   // Controlar el scroll para cambiar la apariencia del navbar
   useEffect(() => {
@@ -27,58 +41,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  // Variantes para animaciones
-  const menuVariants = {
-    closed: {
-      opacity: 0,
-      x: '-100%',
-      transition: {
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
-        staggerChildren: 0.05,
-        staggerDirection: -1,
-      },
-    },
-    open: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
-        staggerChildren: 0.07,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const menuItemVariants = {
-    closed: {
-      opacity: 0,
-      x: -20,
-      transition: { duration: 0.2 },
-    },
-    open: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.2 },
-    },
-  };
-
-  // Variante para el botón de hamburguesa
-  const hamburgerVariants = {
-    open: { rotate: 90, scale: 1.1 },
-    closed: { rotate: 0, scale: 1 },
-  };
-
-  const menuItems = [
-    { text: t('common.nav.home'), href: '/' },
-    { text: t('common.nav.packages'), href: '/#packages' },
-    { text: t('common.nav.services'), href: '/#services' },
-    { text: t('common.nav.book'), href: '/#calendar' },
-    { text: t('common.nav.contact'), href: '/contact' },
-    { text: t('common.nav.about'), href: '/about' },
-  ];
 
   return (
     <header
@@ -101,18 +63,16 @@ const Navbar = () => {
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}
             >
-              RelaxInn
+              PCP
             </Link>
           </motion.div>
 
-          {/* Contenedor de acciones */}
           <motion.div
             className='flex items-center space-x-4'
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            {/* Language Switch */}
             <LanguageSwitch
               className={isScrolled ? 'text-gray-700' : 'text-white'}
             />
@@ -170,7 +130,7 @@ const Navbar = () => {
                     transition={{ delay: 0.3 }}
                   >
                     <Link href='/' className='text-gray-900 font-bold text-xl'>
-                      RelaxInn
+                      PCP
                     </Link>
                   </motion.div>
                   <motion.button

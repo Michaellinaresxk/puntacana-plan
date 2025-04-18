@@ -1,10 +1,9 @@
-// lib/types.ts
-
 export type PackageType = 'standard' | 'premium';
 
 export interface Service {
   id: string;
   name: string;
+  img: string;
   description: string;
   packageType: PackageType[];
   price: number;
