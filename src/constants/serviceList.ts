@@ -292,3 +292,112 @@ export const PAYMENT_METHODS: PaymentMethod[] = [
     isAvailable: true,
   },
 ];
+
+export type TourServiceData = {
+  pickupTime: string;
+  duration?: string;
+  schedule?: string;
+  includes: string[];
+  whatToBring: string[];
+};
+
+export type YachtServiceData = {
+  size: string;
+  capacity: string;
+  schedule: string;
+  includes: string[];
+  halfDayOption?: {
+    available: boolean;
+    times: string[];
+  };
+  menuOptions: Array<{
+    name: string;
+    items: string[];
+  }>;
+};
+
+export const SPECIAL_SERVICES_DATA: Record<string, any> = {
+  'saona-island-tour': {
+    type: 'tour',
+    pickupTime: '7:30 AM',
+    priceUnit: 'per person',
+    includes: [
+      'Tour guide',
+      'Round-trip transportation from your villa',
+      'Catamaran ride',
+      'Buffet lunch on the beach',
+      'Open bar on the catamaran (beer, water, soda, and rum)',
+      'Onboard entertainment and animation',
+    ],
+    whatToBring: [
+      'Towel',
+      'Sunscreen',
+      'Swimwear',
+      'Camera',
+      'Cash (for souvenirs or local purchases)',
+    ],
+  },
+  'luxe-yacht': {
+    type: 'yacht',
+    size: '50 Feet',
+    capacity: 'Up to 19 People',
+    schedule: 'Monday, April 21st, 9:00 AM – 5:30 PM',
+    includes: [
+      'Private 50ft Yacht with Fuel',
+      'Professional Crew (Captain and Sailor)',
+      'Snorkeling Equipment',
+      'Visit to Caribbean Island Destinations',
+      'Private Round-Trip Transportation',
+    ],
+    halfDayOption: {
+      available: true,
+      times: ['9:00 AM – 1:00 PM', '1:30 PM – 5:30 PM'],
+    },
+    menuOptions: [
+      {
+        name: 'Classic Menu #1',
+        items: [
+          'Ice',
+          'Beers',
+          'Water',
+          'Hot Dogs',
+          'Soft Drinks',
+          'Tropical Fruits',
+          'Premium Burgers',
+          'Nachos with Guacamole',
+        ],
+      },
+      {
+        name: 'Classic Menu #2',
+        items: [
+          'Ice',
+          'Beers',
+          'Water',
+          'Pork Ribs',
+          'Soft Drinks',
+          'Pork Chops',
+          'Pasta Salad',
+          'Tropical Fruits',
+          'Chicken Breast',
+          'Nachos with Guacamole',
+        ],
+      },
+      {
+        name: 'Premium Menu #3',
+        items: [
+          'Ice',
+          'Beers',
+          'Water',
+          'Salmon',
+          'Soft Drinks',
+          'Pasta Salad',
+          'Fresh Lobster',
+          'Tropical Fruits',
+          'Nachos with Guacamole',
+          'Premium Cheese & Ham Platter',
+        ],
+      },
+    ],
+  },
+  // Añadir más servicios especiales según sea necesario
+};
