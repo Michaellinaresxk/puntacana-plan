@@ -1,3 +1,5 @@
+// lib/types.ts
+
 export type PackageType = 'standard' | 'premium';
 
 export interface Service {
@@ -8,8 +10,29 @@ export interface Service {
   packageType: PackageType[];
   price: number;
   duration: number; // in hours
-  imageUrl?: string;
   available: boolean;
+}
+
+// Extended service interface for detailed information
+export interface EnhancedService extends Service {
+  fullDescription?: string;
+  includes?: string[];
+  whatToBring?: string[];
+  schedule?: string;
+  pickupTime?: string;
+  priceUnit?: string; // e.g., "per person", "per group"
+  capacity?: string;
+  size?: string; // For yacht, etc.
+  location?: string;
+  menuOptions?: {
+    name: string;
+    items: string[];
+  }[];
+  halfDayOption?: {
+    available: boolean;
+    times?: string[];
+    price?: number;
+  };
 }
 
 export interface BookingDate {
